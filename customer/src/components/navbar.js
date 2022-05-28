@@ -6,7 +6,9 @@ class Navbar extends React.Component{
   Logout= () => {
     localStorage.removeItem("token")
     localStorage.removeItem("customer")
-    window.location = "/"
+    localStorage.removeItem("name")
+    localStorage.removeItem("username")
+    window.location = "/login"
   }
     render(){
         return(
@@ -35,6 +37,8 @@ class Navbar extends React.Component{
       <li className="nav-item">
       <Link className="nav-link" to="/register">Register</Link>
       </li> */}
+      <button onClick={() => this.Logout()} className="btn btn-light" aria-current="page" > Logout </button>
+
     </ul>
     </div>
      
