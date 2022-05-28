@@ -56,6 +56,7 @@ class Paket extends React.Component {
                                 <img src={bandung} className="card-img-top" id="city" alt="..." />
                                     <h5 className="card-title">Bandung</h5>
                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <Link className="button" id="button1" to="/paket/bandung">Check </Link>
                                 </div>
                             </div>
                         </div>
@@ -67,6 +68,7 @@ class Paket extends React.Component {
                                     <img src={bali} className="card-img-top" id="city" alt="..." />
                                     <h5 className="card-title">Bali</h5>
                                     <p className="card-text">With natural experience, travel yourself </p>
+                                    <Link className="button" id="button1" to="/paket/bali">Check </Link>
                                 </div>
                                 
                             </div>
@@ -78,6 +80,7 @@ class Paket extends React.Component {
                                 <img src={jogja} className="card-img-top" id="city" alt="..." />
                                     <h5 className="card-title">Jogjakarta</h5>
                                     <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <Link className="button" id="button1" to="/paket/jogja">Check </Link>
                                 </div>
                             </div>
                         </div>

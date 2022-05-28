@@ -26,11 +26,7 @@ class About extends React.Component{
            <img src={about} className="md:justify-end md:w-2/5 md:h-1/5 md:pl-20 md:p" alt="..."/> */}
 
            </>
-
-               
-            
-        
-        )
+           )
     }
 }
 

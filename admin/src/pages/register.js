@@ -71,7 +71,8 @@ class Registrasi extends React.Component {
                   onChange={this.bind}
                   autoComplete="email"
                   required
-                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 
+                  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                   placeholder="Nama"
                 />
               </div>
@@ -87,7 +88,8 @@ class Registrasi extends React.Component {
                   onChange={this.bind}
                   autoComplete="email"
                   required
-                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 
+                  text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                   placeholder="Username"
                 />
               </div>
@@ -103,7 +105,8 @@ class Registrasi extends React.Component {
                   onChange={this.bind}
                   autoComplete="current-password"
                   required
-                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 
+                  text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                   placeholder="Password"
                 />
               </div>
@@ -125,42 +128,15 @@ class Registrasi extends React.Component {
             <div>
               <button
                 type="submit"
-                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md 
+                text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
-Register
+              Register
               </button>
             </div>
           </form>
         </div>
       </div>
-    
-      //    <div className="container d-flex h-100 justify-content-center align-items-center">
-        //         <div className="col-sm-6 card my-5">
-        //             <div className="card-header bg-success text-white text-center">
-        //                 <h4>Tour Guide</h4>
-        //                 <strong className="text-warning">Member Sign In</strong>
-        //             </div>
-        //     <div className="card-body">
-        //         { !this.state.logged ? 
-        //                         (
-        //     <div className="alert alert-danger mt-1">
-        //         { this.state.message }
-        //     </div>
-        //         ) : null }
-        //     <form onSubmit={ev => this.Login(ev)}>
-        //         <input type="text" className="form-control mb-1" placeholder="Type username..."value={this.state.username}
-        //         onChange={ev => this.setState({username: ev.target.value})} />
-        //         <input type="password" className="form-control mb-1" placeholder="Enter your password..."value={this.state.password}
-        //         onChange={ev => this.setState({password: ev.target.value})}
-        //         autoComplete="false" />
-         
-        //     <button className="btn btn-block btn-primary mb-1" type="submit">
-        //         Sign In
-        //     </button>
-        //     </form>
-        //     </div>
-        //                 </div>
-        //             </div>
                 )
             }
            
