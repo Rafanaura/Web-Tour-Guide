@@ -33,7 +33,7 @@ class Login extends React.Component {
             let token = response.data.token
             let nama = response.data.data.nama
             localStorage.setItem("admin", JSON.stringify(admin))
-            JSON.parse(localStorage.getItem("admi"))
+            JSON.parse(localStorage.getItem("admin"))
             localStorage.setItem("token", token)
             localStorage.setItem("nama", nama)
             window.location= "/home"

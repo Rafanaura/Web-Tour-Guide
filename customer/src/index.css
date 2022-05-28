@@ -1,8 +1,8 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
-@layer components {
+/* @layer components { */
   .card {
     background-color: theme('colors.white');
     border-radius: theme('borderRadius.lg');
@@ -10,7 +10,7 @@
     box-shadow: theme('boxShadow.xl');
   }
   /* ... */
-}
+/* } */
 /* body {
   margin: 0;
   background-image: url(/src/img/jogja.jpg);

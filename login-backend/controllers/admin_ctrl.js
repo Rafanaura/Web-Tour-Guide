@@ -54,15 +54,15 @@ module.exports = {
         db.query(
             `select * from admin where username = '${username}'`,
             (err, result) => {
-                const customer = result[0];
-                if (typeof customer === "undefined") {
+                const admin = result[0];
+                if (typeof admin === "undefined") {
                     res.status(401).json({ message: "User not fond" });
                 } else {
-                    if (customer.password === md5(password)) {
-                        const token = jwt.sign({ data: customer }, SECRET_KEY);
+                    if (admin.password === md5(password)) {
+                        const token = jwt.sign({ data: admin }, SECRET_KEY);
                         res.json({
                             logged: true,
-                            data: customer,
+                            data: admin,
                             token: token,
                         });
                     } else {

@@ -5,8 +5,10 @@ import {Nav} from "react-bootstrap"
 class Navbar extends React.Component{
   Logout= () => {
     localStorage.removeItem("token")
-    localStorage.removeItem("customer")
-    window.location = "/"
+    localStorage.removeItem("admin")
+    localStorage.removeItem("name")
+    localStorage.removeItem("username")
+    window.location = "/login"
   }
     render(){
         return(
@@ -25,8 +27,10 @@ class Navbar extends React.Component{
       <Link className="nav-link" to="/paket">Paket</Link>
       </li>
       {/* <li className="nav-item">
-      <Link className="nav-link" to="/transaksi">Transaksi</Link>
+      <Link className="nav-link" to="/logout">Logout</Link>
       </li> */}
+    <button onClick={() => this.Logout()} className="btn btn-light" aria-current="page" > Logout </button>
+
       {/* <li className="nav-item">
       <Link className="nav-link" to="/">Login</Link>
       </li>
