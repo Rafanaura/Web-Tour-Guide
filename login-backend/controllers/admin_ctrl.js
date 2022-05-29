@@ -15,7 +15,7 @@ module.exports = {
         const {
             nama,
             username,
-            password
+            password 
         } = req.body
         if (!nama, !username || !password) {
             res.status(402).json({

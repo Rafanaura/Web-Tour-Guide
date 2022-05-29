@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities; */
 
-/* @layer components { */
   .card {
     background-color: theme('colors.white');
     border-radius: theme('borderRadius.lg');

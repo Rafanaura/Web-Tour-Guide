@@ -30,20 +30,16 @@ class PaketList extends React.Component {
                             <button className="button" id="button1"
                             onClick={this.props.onDrop}>
                                 Delete
-                            </button>        
-                            
-                            <button className="button" id="button1" 
-                            onClick={() => this.Add()} data-toggle="modal" data-target="#modal_paket">
-                            Tambah Data
-                            </button>
+                            </button>    
+                                  
                                                     </div>
                                 
                             </div>
                         </div>
                     </div>
 
-
             </div>
+            
         )
     }
 }

@@ -23,7 +23,7 @@ class Login extends React.Component {
         password: this.state.password
     }
 
-    let url ="http://localhost:7000/customer/login"
+    let url ="http://localhost:7000/admin/login"
 
     axios.post(url, data)
     .then(response => {

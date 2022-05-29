@@ -23,5 +23,8 @@ app.get("/", (req,res) => {
 })
 app.use("/admin", require('./routes/admin_router'))
 app.use("/customer", require('./routes/cust_router'))
-const port = 7000;
-app.listen(port, () => console.log (`App sudah berjalan ${port}`))
+// const port = 7000;
+// app.listen(port, () => console.log (`App sudah berjalan ${port}`))
+app.listen(process.env.PORT || 7000, () => {
+    console.log('Server is listening on port 7000');
+});

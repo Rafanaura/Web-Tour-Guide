@@ -30,13 +30,6 @@ class Navbar extends React.Component{
       <li className="nav-item">
       <Link className="nav-link" to="/transaksi">Transaksi</Link>
       </li>
-     
-      {/* <li className="nav-item">
-      <Link className="nav-link" to="/">Login</Link>
-      </li>
-      <li className="nav-item">
-      <Link className="nav-link" to="/register">Register</Link>
-      </li> */}
       <button onClick={() => this.Logout()} className="btn btn-light" aria-current="page" > Logout </button>
 
     </ul>

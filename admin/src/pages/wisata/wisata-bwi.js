@@ -130,39 +130,7 @@ class WisataBanyuwangi extends Component {
         $("#modal_paket").hide()
     }
 
-addToCart = (selectedItem) => {
-    // membuat sebuah variabel untuk menampung cart sementara
-    let tempCart = []
 
-    // cek eksistensi dari data cart pada localStorage
-    if(localStorage.getItem("cart") !== null){
-        tempCart = JSON.parse(localStorage.getItem("cart"))
-        // JSON.parse() digunakan untuk mengonversi dari string -> array object
-    }
-
-    // cek data yang dipilih user ke keranjang belanja
-    let existItem = tempCart.find(item => item.kode === selectedItem.kode)
-
-    if(existItem){
-        // jika item yang dipilih ada pada keranjang belanja
-        window.alert("Anda telah memilih item ini")
-    }else{
-        // user diminta memasukkan jumlah item yang dibeli
-        let promptJumlah = window.prompt("Masukkan jumlah item yang beli","")
-        if(promptJumlah !== null && promptJumlah !== ""){
-            // jika user memasukkan jumlah item yg dibeli
-
-            // menambahkan properti "jumlahBeli" pada item yang dipilih
-            selectedItem.jumlahBeli = promptJumlah
-            
-            // masukkan item yg dipilih ke dalam cart
-            tempCart.push(selectedItem)
-
-            // simpan array tempCart ke localStorage
-            localStorage.setItem("cart", JSON.stringify(tempCart))
-        }
-    }
-}
 
     render() {
         return (
@@ -182,14 +150,14 @@ addToCart = (selectedItem) => {
                             gambar={item.gambar}
                             onEdit={() => this.Edit(item)}
                             onDrop={() => this.Drop(item)}
-                            onCart={ () => this.addToCart(item)}    
+                            onAdd={ () => this.Add(item)}    
                         />
                     ))}
                 </div>
-
-                {/* <button className="btn btn-success" onClick={() => this.Add()} data-toggle="modal" data-target="#modal_paket">
-                    Tambah Data
-                </button> */}
+                <button className="button " id="button1" 
+                         onClick={() => this.Add()} data-toggle="modal" data-target="#modal_paket">
+                            Tambah Data
+                            </button>
 
                 {/* component modal sbg control manipulasi data */}
                 <div className="modal" id="modal_paket">
@@ -229,9 +197,11 @@ addToCart = (selectedItem) => {
                                         Simpan
                                     </button>
                                 </form>
+                                
 
                                 <br></br>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
